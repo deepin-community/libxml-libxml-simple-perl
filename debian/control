@@ -1,0 +1,23 @@
+Source: libxml-libxml-simple-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Danai SAE-HAN (韓達耐) <danai@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               libxml-libxml-perl <!nocheck>
+Build-Depends-Indep: perl
+Standards-Version: 4.4.1
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libxml-libxml-simple-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libxml-libxml-simple-perl.git
+Homepage: https://metacpan.org/release/XML-LibXML-Simple
+
+Package: libxml-libxml-simple-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libxml-libxml-perl
+Description: Perl module that uses the XML::LibXML parser for XML structures
+ XML::LibXML::Simple is a blunt rewrite of XML::Simple (by Grant McLean) to use
+ the XML::LibXML parser for XML structures, where the original uses plain Perl
+ or SAX parsers.
